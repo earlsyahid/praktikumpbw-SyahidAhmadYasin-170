@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pendaftaran | Praktek 3</title>
+</head>
+<body>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+     <table border="1" cellspacing="0" align="left">
+        <tr>
+            <td style="padding: 5px 20px 20px 20px;">
+        <div>
+            <h1>Formulir Data Diri</h1>
+        </div>
+        <div>
+        <label for="">Nama:</label> 
+        <input type="text" name="username" required>
+    </div>
+    <div>
+        <label for="">Email:</label>
+        <input type="text" name="email" required>
+    </div>
+    <div>
+        <label>Jenis Kelamin:</label>
+            <input type="radio"name="gender" value="1"> Laki-laki
+            <input type="radio"name="gender" value="2"> Perempuan
+    </div>
+    <div>
+        <label>Hobi:</label>
+            <input type="checkbox" name="hobi" value="musik"> Musik
+            <input type="checkbox" name="hobi" value="olahraga"> Olahraga
+            <input type="checkbox" name="hobi" value="Seni"> Seni
+    </div>
+    <div>
+        <label>Pilih Kota:</label>
+        <select name="kota" id="">
+                <option value="jakarta">Jakarta</option>
+                <option value="bogor">Bogor</option>
+                <option value="karawang">Karawang</option>
+                <option value="bekasi">Bekasi</option>
+            </select>
+    </div>
+    <div>
+            <label for="file">Upload Foto:</label>
+            <input type="file" id="foto" name="foto">
+    </div>
+    <div>
+        <button type="submit" onclick="alert('Anda Sudah Mendaftar')">Daftar</button>
+    </div>
+
+    </td>
+    </tr>
+</form>
+</body>
+</html>
