@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Halaman Web Singaperbangsa</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Selamat Datang Di Web Singaperbangsa</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#"">Beranda</a></li>
+                <li><a href="#"">Tentang</a></li>
+                <li><a href="#"">Layanan</a></li>
+                <li><a href="#"">Kontak</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <section class="content">
+                <form action==""method="GET"
+    enctype="multipart/form-data">
+        <div>
+            <h1>Formulir Pendaftaran</h1>
+            <p>Silahkan isi formulir di bawah ini untuk mendaftar.</p>
+            <label for="">Masukan Nama:</label>
+            <input type="text" name="username" required>
+        </div>
+        <div>
+            <label for="">Email</label>
+            <input type="text" name="email" required>
+        </div>
+        <div>
+            <label for="">Password</label>
+            <input type="text" name="password" required>
+        </div>
+        <div class="pilihan">
+            <label>Jenis Kelamin:</label>
+             <input type="radio"name="jk" value="1"> <b>Laki-Laki</b>
+             <input type="radio"name="jk" value="2"> <b>Perempuan</b>
+        </div>
+        <div class="pilihan">
+            <label>Hobi:</label>
+            <input type="checkbox" name="hobi" value="futsal"> <b>Musik</b>
+            <input type="checkbox" name="hobi" value="Badminton"> <b>Membaca</b>
+            <input type="checkbox" name="hobi" value="Badminton"> <b>Menggambar</b>
+        </div>
+        <div>
+            <label>Pilih Kota:</label>
+            <select name="kota" id="">
+                <option value="J">Jakarta</option>
+                <option value="K">Karawang</option>
+                <option value="B">Bogor</option>
+            </select>
+        </div>
+        <div>
+            <label>Pesan Tambahan:</label>
+             <textarea name="deskripsi" id="" placeholder="Tulis Pesan di sini..."></textarea>
+        </div>
+                <button class="btn" onclick="alert ('Pesan Terkirim')"">Kirim</button>
+            </section>
+
+            <aside class="sidebar">
+                <h2>Sidebar</h2>
+                <p>Bagian sidebar dapat berisi tautan, iklan, atau informasi tambahan.</p>
+            </aside>
+        </div>
+
+        <footer>
+            <p>
+                &copy; 2024 Halaman Web Singaperbangsa. Dibuat dengan CSS
+            </p>
+        </footer>
+    </body>
+</html>
