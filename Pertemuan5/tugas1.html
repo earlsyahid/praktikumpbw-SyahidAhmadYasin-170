@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Nilai Huruf</title>
+</head>
+
+<body>
+    <h2>Penghitung Nilai Mutu Huruf Mata Kuliah</h2>
+
+    <div>
+        <p>Masukkan NPM Anda</p>
+        <input type="number" id="npm">
+    </div>
+
+    <div>
+        <p>Masukkan Nilai (1-100)</p>
+        <input type="number" id="nilai">
+        <button onclick="hitung()">Hitung</button>
+        <p>Anda Mendapatkan <span id="hasil"></span></p>
+    </div>
+
+    <script>
+        function hitung(){
+            let nilai = parseInt(document.getElementById("nilai").value);
+            let mutu;
+
+            if (nilai < 0 || nilai > 100){
+                document.getElementById("hasil").innerHTML = "Nilai tidak valid!";
+                return;
+            }
+
+            if (nilai >= 80) {
+                mutu = "A";
+            } else if (nilai >= 70) {
+                mutu = "B";
+            } else if (nilai >= 60) {
+                mutu = "C";
+            } else if (nilai >= 50) {
+            mutu = "D";
+            } else {
+                mutu = "E";
+            }
+
+            document.getElementById("hasil").innerHTML = mutu;
+        }
+        </script>
+    </body>
+</html>
