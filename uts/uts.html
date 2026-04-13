@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="uts.css">
+    <title>Koperasi Mahasiswa</title>
+</head>
+<body>
+    <header>
+        <h1>Koperasi Mahasiswa</h1>
+    </header>
+    <div class="container">
+        <section class="content">
+    <h2>Form Pembelian Barang</h2> 
+    <p>Silahkan isi form dibawah ini untuk melakukan pembelian barang di koperasi mahasiswa</p>   
+    <form action="uts.php" method="post" enctype="multipart/form-data">
+    <label for=""><b>Nama:</b></label><br>
+        <input type="text" name="username" required><br>
+    <label for=""><b>NIM:</b></label><br>
+        <input type="text" name="nim" required><br>
+    <label for=""><b>Email:</b></label><br>
+        <input type="text" name="email" required><br>
+    <label><b>Pilih Jenis layanan anda!</b></label><br>
+        <select name="jenislayanan" id="">
+            <option value="Reguler">Reguler</option>
+            <option value="Prioritas">Prioritas</option>
+        </select><br>
+        <label for=""><b>Barang:</b></label><br>
+            <input type="checkbox" name="barang" value="Pensil"> Pensil (Rp 3000)<br>   
+            <input type="checkbox" name="barang" value="Buku"> Buku (Rp 5000)<br>
+            <input type="checkbox" name="barang" value="Penghapus"> Penghapus (Rp 2000)<br>
+        <input type="submit" value="Jumlah">
+        </form>
+        </section>
+    </div>
+</body>
+</html>
